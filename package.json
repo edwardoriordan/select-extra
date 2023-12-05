@@ -1,0 +1,44 @@
+{
+  "name": "select-extra",
+  "displayName": "select-extra",
+  "description": "Selection up and down. Also swap active and anchor.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "select-extra.extendSelectionUp",
+        "title": "Select line up"
+      },
+      {
+        "command": "select-extra.extendSelectionDown",
+        "title": "Select line down"
+      },
+      {
+        "command": "select-extra.swapActiveAnchor",
+        "title": "Swap acitve and anchor"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.84.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8"
+  }
+}
