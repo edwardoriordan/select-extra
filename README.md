@@ -1,4 +1,4 @@
-# select-extra README
+# Select Extra
 
 Some extra selection commands for VS Code.
 
